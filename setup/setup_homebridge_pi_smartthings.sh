@@ -77,6 +77,9 @@ chmod -R 0700 /etc/homebridge
 chmod 755 /etc/init.d/homebridge
 sleep .5
 
+# Install init script to run at system boot
+update-rc.d homebridge defaults
+
 echo "homebridge is setup"
 echo
 echo "done"
